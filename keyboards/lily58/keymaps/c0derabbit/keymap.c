@@ -18,7 +18,7 @@ enum custom_keycodes {
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [_COLEMAK] = LAYOUT_kc(
+  [_COLEMAK] = LAYOUT(
      GRV , 1  , 2  , 3  , 4  , 5  ,                6 ,  7  , 8  , 9  , 0  ,BSPC,
      TAB , Q  , W  , F  , P  , B  ,                J  , L  , U  , Y  ,SCLN, DEL,
      ESC , A  , R  , S  , T  , G  ,                M  , N  , E  , I  , O  ,QUOT,
@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                    ___, LGUI,LOWR, ENT,        SPC,RASE,LCTL,___
   ),
  
-  [_LOWER] = LAYOUT_kc(
+  [_LOWER] = LAYOUT(
      TILD,EXLM, AT ,HASH, DLR,PERC,               MRWD,MPLY,MFFD,LPRN,MINS, EQL,
      ___ ,___ ,___ ,___ ,___ ,___ ,               ___ ,___ , UP ,LBRC,RBRC,BSLS,
      ___ ,___ ,___ ,___ ,___ ,___ ,               ___ ,LEFT,DOWN,RGHT,___ ,PGDN,
@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     ___, ___ ,___ ,___ ,      ___ ,___ ,___ ,___
   ),
 
-  [_RAISE] = LAYOUT_kc(
+  [_RAISE] = LAYOUT(
      ___ ,BRID,BRIU,___ ,___ ,___ ,               ___ ,___ ,___ ,VOLD,VOLU,MUTE,
      ___ ,___ ,___ ,WH_U,___ ,___ ,               ___ ,___ ,MS_U,___ ,___ ,___ ,
      ___ ,___ ,WH_L,WH_D,WH_R,___ ,               ___ ,MS_L,MS_D,MS_R,___ ,___ ,
@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                     ___, ___ ,___ ,MS_BTN1,   ___ ,___ ,___ ,___
   ),
  
-  [_ADJUST] = LAYOUT_kc(
+  [_ADJUST] = LAYOUT(
      ___ ,___ ,___ ,___ ,___ ,___ ,               ___ ,___ ,___ ,___ ,___ ,___ ,
      ___ ,___ ,___ ,___ ,___ ,___ ,               ___ ,___ ,___ ,___ ,___ ,___ ,
      ___ ,___ ,___ ,___ ,___ ,___ ,               ___ ,___ ,___ ,___ ,___ ,___ ,
